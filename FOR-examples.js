@@ -193,50 +193,222 @@
 // console.log(twentyToTen(10, 20));
 
 
-var extraNumbers = [20, 50, 68, 209, 57, 96, 475, 7645, 29, 4593];
+// var extraNumbers = [20, 50, 68, 209, 57, 96, 475, 7645, 29, 4593];
 
-function halfExtra(k) {
-    var newExtra = [];
+// function halfExtra(k) {
+//     var newExtra = [];
+//     var i = 0;
+//     while (i < k.length / 2) {
+//         newExtra.push(k[i]);
+//         i++;
+//     }
+//     return newExtra;
+// }
+
+// console.log(halfExtra(extraNumbers));
+
+
+
+
+// var extraNumbers = [20, 50, 68, 209, 57, 96, 475, 7645, 29, 4593];
+
+// function halfExtra(k) {
+//     var newExtra = [];
+//     var i = k.length / 2;
+//     while (i < k.length) {
+//         newExtra.push(k[i]);
+//         i++;
+//     }
+//     return newExtra;
+// }
+
+// console.log(halfExtra(extraNumbers));
+
+
+// function qandaydir(x) {
+//     var yanaBitta = [];
+//     var i = 2;
+//     while (i < x) {
+//         if (x % i === 0) {
+//             yanaBitta.push(i);
+//         }
+//         i++;
+//     }
+//     return yanaBitta;
+// }
+// console.log(qandaydir(100));
+
+// var nextArray = [945, 563462, 45, 66, 8, 12, 4, 6,];
+
+// console.log(nextArray.slice(0, 2));
+
+
+// function evenNumbers(x) {
+//     var onlyEven = [];
+//     var i = 0;
+//     while (i < x) {
+//         if (i % 2 === 0) {
+//             onlyEven.push(i);
+//         }
+//         i++;
+//     }
+//     return onlyEven;
+// }
+
+// console.log(evenNumbers(10));
+
+// var jocopo = ["some", "apple", "new", "green"];
+// first = "something"
+// console.log(jocopo);
+
+// var myArray = ["bmw", "toyota", "mers",];
+// var myString = myArray.toString();
+// console.log(myArray);
+// console.log(myString);
+
+// console.log(Math.PI);
+// console.log(Math.random() * 100);
+// console.log(Math.round(4,5));
+// console.log(Math.pow(8, 2));
+// console.log(Math.sqrt(49));
+// console.log(Math.abs(-2, 3));
+// console.log(Math.ceil(4.2));
+// console.log(Math.ceil(4.9));
+// console.log(Math.floor(4.1));
+// console.log(Math.floor(Math.random() * 100));
+
+
+// var myPets = ["Bobik", "Ksyuhsa", "Hamelton", "Raken", "Jeko"];
+
+// console.log(myPets[Math.floor(Math.random() * myPets.length)]);
+
+// var longWords = "we love playing basketball";
+// var nextArray = longWords.split(" ");
+// console.log(nextArray);
+
+// var i = 0;
+// var addedArray = [];
+// while (i < nextArray.length) {
+//     if (nextArray[i].length < 5) {
+//         addedArray.push(nextArray[i] + "s")
+//     }
+//     i++;
+// }
+// console.log(addedArray);
+// var addedArrayString = addedArray.join(" ");
+// console.log(addedArrayString);
+
+
+// var overFour = ["smile", "apple", "new", "good", "position", "go"];
+
+// var onlyFour = [];
+// var i = 0;
+// while (i < overFour.lenth); {
+//     if (overFour[i].length < 4) {
+//         onlyFour.push(overFour[i]);
+//     }
+//     i++;
+// }    
+// console.log(onlyFour);
+
+
+// var firtstArray = ["Man", "ko'rishga", "yo'q"];
+// var secondArray = ["sani", "ko'zim", "Tushundingmi!"];
+
+
+// function concatTo(x, y) {
+//     var newArray = [];
+//     var i = 0;
+//     while (i < x.length) {
+//         var j = 0;
+//         while (j < y.length) {
+//             if (i === j && x[i] === "yo'q") {
+//                 newArray.push(`${x[i]}. ${y[j]}`)
+//             } else if (i === j) {
+//                 newArray.push(`${x[i]} ${y[j]}`)
+//             }
+//             j++;
+//         }
+//         i++;
+//     }
+//     return newArray.join(" ");
+// }
+
+// console.log(concatTo(firtstArray, secondArray));
+
+
+// function testFunction() {
+//     var i = 0;
+//     while (i < 5) {
+//         var j = 0;
+//         while (j < 5) {
+//             console.log(`${i} ---- ${j}`);
+//             j++;
+//         }
+//         i++;
+//     }
+// }
+
+// testFunction();
+
+
+// function numbersOfEs(word) {
+//     var counter = 0;
+//     var newArry = word.split("");
+//     var i = 0;
+//     while (i < newArry.length) {
+//         if (newArry[i] === "e") {
+//             counter++;
+//         }
+//         i++;
+//     }
+//     return counter;
+// }
+
+// console.log(numbersOfEs("elemtatey"));
+
+
+
+
+
+// function numbersOfEs(word) {
+//     var counter = 0;
+//     var newArry = word.split("");
+//     var i = 0;
+//     while (i < newArry.length) {
+//         if (newArry[i] === "e" || newArry[i] === "E") {
+//             counter++;
+//         }
+//         i++;
+//     }
+//     return counter;
+// }
+
+// console.log(numbersOfEs("elemtatEy"));
+
+
+function numbersOfEs(word) {
+    var vowel = ["a", "e", "i", "u", "o"]
+    var counter = 0;
+    var newArry = word.split("");
     var i = 0;
-    while (i < k.length / 2) {
-        newExtra.push(k[i]);
-        i++;
-    }
-    return newExtra;
-}
-
-console.log(halfExtra(extraNumbers));
-
-
-
-
-var extraNumbers = [20, 50, 68, 209, 57, 96, 475, 7645, 29, 4593];
-
-function halfExtra(k) {
-    var newExtra = [];
-    var i = k.length / 2;
-    while (i < k.length) {
-        newExtra.push(k[i]);
-        i++;
-    }
-    return newExtra;
-}
-
-console.log(halfExtra(extraNumbers));
-
-
-function qandaydir(x) {
-    var yanaBitta = [];
-    var i = 2;
-    while (i < x) {
-        if (x % i === 0) {
-            yanaBitta.push(i);
+    while (i < newArry.length) {
+        var j = 0;
+        while (j < vowel.length) {
+        if (newArry[i] === vowel[j]) {
+            counter++;
         }
-        i++;
+        j++;
+        }
+        i++;   
     }
-    return yanaBitta;
+    return counter;
 }
-console.log(qandaydir(100));
+
+console.log(numbersOfEs("elemetatey"));
+
+
+
 
 
 
