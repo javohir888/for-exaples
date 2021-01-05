@@ -503,6 +503,27 @@ console.log(gradingStudents([88]));
 
 
 
+var justArray = [2, 4, 6, 5, 7, 8, 21, 23, 5, 68]
+function newOne(x) {
+    var i = 0;
+    var nextArray = [];
+    while (i < x.length) {
+        if (x[i] % 2 === 0) {
+            nextArray.push(x[i]);
+        } else {
+
+        }
+        i++;
+    }
+    return nextArray;
+}
+
+console.log(newOne(justArray));
+
+
+
+
+
 
 
 
