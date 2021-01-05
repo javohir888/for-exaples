@@ -286,6 +286,36 @@
 // var nextArray = longWords.split(" ");
 // console.log(nextArray);
 
+// var newCar = ["nexia", "matiz", "tiko", "damas", "lada",]
+// console.log(newCar[Math.floor(Math.random() * newCar.length)]);
+// console.log(Math.floor(Math.random() * 5));
+
+// var words = "She a working girl she work the pole She break it down she take it low She fine as hell she about the dough"
+// var arrayWords = words.split(" ")
+// console.log(arrayWords);
+// function toArray(x) {
+//     var newArray = [];
+//     var i = 0;
+//     while (i < x.length) {
+//         if (x[i].length < 4) {
+//             newArray.push(x[i]);
+//         }
+//         i++;
+//     }
+//     return newArray;
+// }
+// toArray(arrayWords);
+
+// var newCar = ["nexia", "matiz", "tiko", "damas", "lada",]
+// var i = 0;
+// var addedArrey = [];
+// while (i < newCar.length) {
+//     console.log(addedArrey.push(newCar[i] + "s"));
+//     i++;
+// }
+
+// console.log(addedArrey);
+
 // var i = 0;
 // var addedArray = [];
 // while (i < nextArray.length) {
@@ -387,25 +417,87 @@
 // console.log(numbersOfEs("elemtatEy"));
 
 
-function numbersOfEs(word) {
-    var vowel = ["a", "e", "i", "u", "o"]
-    var counter = 0;
-    var newArry = word.split("");
+// function numbersOfEs(word) {
+//     var vowel = ["a", "e", "i", "u", "o"]
+//     var counter = 0;
+//     var newArry = word.split("");
+//     var i = 0;
+//     while (i < newArry.length) {
+//         var j = 0;
+//         while (j < vowel.length) {
+//         if (newArry[i] === vowel[j]) {
+//             counter++;
+//         }
+//         j++;
+//         }
+//         i++;   
+//     }
+//     return counter;
+// }
+
+// console.log(numbersOfEs("elemetatey"));
+
+// var first = [1, 2, 3, 4, 5,];
+// var counter = 0;
+// var second = [6, 7, 8, 4, 5,];
+// var i = 0;
+// while (i < first.length) {
+//     var j = 0;
+//     while (j < second.length) {
+//     if (first[i] === second[j]) {
+//         counter++;
+//     } 
+//     j++;
+// }
+// i++;
+// }
+// console.log(counter);
+
+
+// function primeNumbers()
+
+// var first = [1, 2, 3, 4, 5];
+// var second = [2, 1, 3, 5, 5];
+// function addOrsub(x, y) {
+//     var newArray = [];
+//     var i = 0;
+//     while (i < x.length) {
+//         var j = 0;
+//         while (j < y.length) {
+//             if (x[i] === y[i] && i === j) {
+//                 newArray.push(x[i] + y[i])
+//             }
+//             if (x[i] !== y[j] && i === j) {
+//                 newArray.push(x[i] - y[j])
+//             }
+//             j++;
+//         }
+//         i++;
+//     }
+//     return newArray;
+// }
+
+// console.log(addOrsub(first, second));
+
+
+
+function gradingStudents(grades) {
+    var roundedGrades = [];
     var i = 0;
-    while (i < newArry.length) {
-        var j = 0;
-        while (j < vowel.length) {
-        if (newArry[i] === vowel[j]) {
-            counter++;
+    while (i < grades.length) {
+        if (grades[i] <= 38) {
+            roundedGrades.push(grades[i]);
+        } else if (5 - grades[i] % 5 < 3) {
+            roundedGrades.push(grades[i] + (5 - (grades[i] % 5)));
+        }  else {
+            roundedGrades.push(grades[i]);
         }
-        j++;
-        }
-        i++;   
+        i++;
     }
-    return counter;
+    return roundedGrades;
 }
 
-console.log(numbersOfEs("elemetatey"));
+console.log(gradingStudents([88]));
 
 
 

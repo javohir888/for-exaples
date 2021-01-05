@@ -170,7 +170,35 @@ h3 {
 }
 
 
+.axxi {
+    background-color: #bbb;
+    margin: 200px auto 200px auto;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-radius: 5px;
+}
 
+.boxx {
+    width: 18%;
+    background-color: #ff9;
+    margin: 10px 0;
+    text-align: center;
+    font-style: italic;
+    color: #4CB050;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 5px 0;
+    font-size: 30px;
+    transition: color 1s, transform 1s, Background-color 1s;   
+}
+
+.boxx:hover {
+    Background-color: #dd3444;
+    transform: rotate(2deg);
+    color: #ee8;
+}
 
 
 
